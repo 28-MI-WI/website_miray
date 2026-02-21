@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@source "./src";
+@import "flag-icons/css/flag-icons.min.css";
+

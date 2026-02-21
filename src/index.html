@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Miray Kaptancik | IT Portfolio & Personal Blog</title>
+  <meta name="description"
+    content="Portfolio & Blog of Miray Kaptancik. Exploring a journey through professional IT projects, personal milestones, and insights into technology and life.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://miraykaptancik.com/">
+  <meta property="og:title" content="Miray Kaptancik | IT Portfolio & Personal Blog">
+  <meta property="og:description"
+    content="Exploring the journey through professional IT projects and personal insights.">
+  <meta property="og:image" content="https://miraykaptancik.com/images/og-preview.jpg">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://miraykaptancik.com/">
+  <meta property="twitter:title" content="Miray Kaptancik | IT Portfolio & Personal Blog">
+  <meta property="twitter:description"
+    content="Exploring the journey through professional IT projects and personal insights.">
+  <meta property="twitter:image" content="https://miraykaptancik.com/images/og-preview.jpg">
+
+  <link href="../dist/output.css" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Condensed:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="./images/herz.png">
+</head>
+
+<body
+  class="min-h-screen overflow-x-hidden text-black dark:text-white bg-white dark:bg-[#251b1e] text-lg leading-relaxed antialiased font-sans">
+  <nav class="sticky top-0 inset-x-0 h-nav z-[100] bg-neutral-900">
+    <div class="absolute left-6 inset-y-0 flex items-center">
+      <img src="./images/herz.png" alt="Logo" class="w-[40px] h-auto bg-white flex-shrink-0">
+    </div>
+    <div class="w-[90%] max-w-[1100px] mx-auto h-full flex items-center">
+      <div class="hidden lg:flex justify-between items-center h-full w-full">
+        <a href="#about"
+          class="flex items-center h-full px-4 text-sm lg:text-lg font-medium tracking-wide text-white font-condensed hover:bg-[#4e192c] transition-colors">About</a>
+        <a href="#projects"
+          class="flex items-center h-full px-4 text-sm lg:text-lg font-medium tracking-wide text-white font-condensed hover:bg-[#4e192c] transition-colors">Projects</a>
+        <a href="#skills"
+          class="flex items-center h-full px-4 text-sm lg:text-lg font-medium tracking-wide text-white font-condensed hover:bg-[#4e192c] transition-colors">Skills</a>
+        <a href="#contact"
+          class="flex items-center h-full px-4 text-sm lg:text-lg font-medium tracking-wide text-white font-condensed hover:bg-[#4e192c] transition-colors">Contact</a>
+      </div>
+    </div>
+    <div class="lg:hidden absolute right-6 inset-y-0 flex items-center">
+      <button id="burgerBtn" class="text-3xl text-white p-2 focus:outline-none" aria-label="menu">☰</button>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div id="mobileMenu"
+      class="hidden absolute top-nav left-0 right-0 bg-black border-t border-white/10 flex-col py-4 z-[999] shadow-2xl">
+      <a href="#about" class="block text-white py-4 px-8 transition-colors active:bg-[#4e192c]">About</a>
+      <a href="#projects" class="block text-white py-4 px-8 transition-colors active:bg-[#4e192c]">Business & Personal
+        Projects</a>
+      <a href="#skills" class="block text-white py-4 px-8 transition-colors active:bg-[#4e192c]">Skills</a>
+      <a href="#contact" class="block text-white py-4 px-8 transition-colors active:bg-[#4e192c]">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Start Content -->
+  <section class="relative grid grid-rows-2 md:grid-cols-2 md:grid-rows-1 overflow-hidden h-hero">
+    <!-- Left (black) -->
+    <div class="bg-[#4e192c] flex items-center justify-center px-8 md:px-16">
+      <div class="relative max-w-xl text-left">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-white">
+          Hi, I’m Miray.
+        </h1>
+        <p class="text-base md:text-xl leading-relaxed text-white/90">
+          Curious. Resilient. Multifaceted.<br>
+          I’ve changed careers,<br>
+          challenged expectations,<br>
+          and I’m just getting started.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right (white) -->
+    <div class="bg-white dark:bg-[#251b1e] flex items-center justify-center px-8 md:px-16">
+      <div class="relative max-w-xl text-left">
+        <p class="text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-[#4e192c] dark:text-white">
+          you?
+        </p>
+        <p class="text-base md:text-xl text-neutral-900 dark:text-white/90 leading-relaxed">
+          Curious enough to scroll?<br>
+          Let’s find out what we can build<br>
+          together.
+        </p>
+      </div>
+    </div>
+
+    <!-- Ampersand: centered on the split line (desktop/tablet) and between blocks (mobile) -->
+    <div class="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0">
+      <span class="font-['DM_Serif_Display'] leading-none select-none blur-[0.5px] bg-clip-text text-transparent
+         
+         /* 1. Mobile & kleine Tablets (bis 767px) */
+         text-[110px] bg-gradient-to-b from-white dark:from-[#251b1e] from-50% to-[#4e192c] dark:to-[#4e192c] to-50%
+         
+         /* 2. iPads & Tablets (768px bis 1279px) */
+         /* Hier halten wir es klein, damit das iPad Pro nicht explodiert */
+         md:text-[130px] md:bg-gradient-to-r md:from-white dark:md:from-[#251b1e] md:from-50% md:to-[#4e192c] dark:md:to-[#4e192c] 
+         md:to-50% lg:text-[220px] 
+         
+         /* 3. Desktop & große Monitore (ab 1280px) */
+         xl:text-[520px]">
+        &
+      </span>
+    </div>
+  </section>
+
+  <section class="scroll-mt-[195px] min-h-about py-12 flex items-center bg-white dark:bg-[#251b1e] w-full">
+    <div
+      class="w-[90%] lg:w-[75%] 2xl:max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+      <!-- LEFT: portrait -->
+      <div class="flex justify-center">
+        <img src="./images/miray.png" class="block w-[80%] max-w-[280px] md:max-w-sm h-auto md:h-about-img object-cover object-top shadow-lg
+     dark:brightness-90 transition-all duration-300" alt="Miray">
+      </div>
+
+      <div class="text-neutral-900 flex flex-col items-center text-center md:text-left md:items-start">
+        <!-- RIGHT: text (ALIGNED WITH HERO) -->
+        <h2
+          class="text-black dark:text-white text-3xl md:text-4xl font-bold text-center md:text-left w-full mb-6 tracking-tight">
+          Who I Am
+        </h2>
+        <p class="text-base md:text-xl dark:text-white/90 leading-relaxed text-left">
+          Former ICU nurse turned frontend explorer.
+          I design, code, and care – equally curious about people and systems.
+        </p>
+        <ul class="mt-6 space-y-4 text-left dark:text-white/90 inline-block mx-auto md:mx-0">
+          <li class="flex items-start gap-3"><span>🧠</span>
+            <span><strong>Analytical & empathetic</strong></span>
+          </li>
+          <li class="flex items-start gap-3"><span>🔧 </span>
+            <span><strong>Maker spirit (yes, I solder too)</strong></span>
+          </li>
+          <li class="flex items-start gap-3"><span>🎨 </span>
+            <span><strong>Visually curious & concept-driven</strong></span>
+          </li>
+          <li class="flex items-start gap-3"><span>🌱 </span>
+            <span><strong>Always learning</strong></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="scroll-mt-20 pb-section-gap bg-white dark:bg-[#251b1e] text-neutral-900">
+    <!-- Accordion: Business -->
+    <div class="w-[90%] max-w-[1100px] mx-auto">
+      <details
+        class="group w-full block border border-[#4e192c] rounded-[10px] bg-white dark:bg-[#251b1e] mb-[15px] overflow-hidden"
+        open>
+        <summary
+          class="flex cursor-pointer items-center justify-between bg-[#4e192c] p-5 text-xl md:text-2xl font-bold text-white transition-colors hover:bg-[#631f38] list-none">
+          Business Projects
+          <span class="text-2xl transition-transform duration-300 group-open:rotate-45">+</span>
+        </summary>
+        <div class="p-[18px] border-t border-black/10">
+          <div class="grid grid-cols-1 gap-6 min-[900px]:grid-cols-2 min-[1300px]:grid-cols-3">
+            <div class="col-span-full bg-white p-3 shadow-md rounded-[10px] w-full mb-4">
+              <h4 class="text-lg md:text-xl font-bold mt-4 mb-2">Company Website</h4>
+              <p class="text-base md:text-lg leading-relaxed">First freelance project: I designed and developed a
+                responsive website for a small business using HTML,
+                CSS, JavaScript and WordPress.</p>
+              <p class="text-sm italic"><em>(Note: The current site has since been changed.)</em></p>
+            </div>
+            <div class="bg-white p-3 shadow-md rounded-[10px] w-full mb-4">
+              <img class="w-[30%] mx-auto mb-3 block rounded-[5px]" src="./images/project_arduino.png" alt="DIY device">
+              <h4 class="text-lg md:text-xl font-bold mt-4 mb-2">IoT Device – Self-built</h4>
+              <p class="text-base md:text-lg leading-relaxed">Built during an IoT module: a connected device with
+                sensors, actuators, and WiFi – all within a 50 CHF
+                budget.
+                The project followed key phases from planning to programming and deepened my practical IoT
+                understanding.
+              </p>
+            </div>
+            <div class="bg-white p-3 shadow-md rounded-[10px] w-full mb-4">
+              <img src="./images/bpmn1.png" alt="bpmn screenshot"
+                class="w-full max-h-[200px] object-cover rounded-[5px] mb-2">
+              <img src="./images/bpmn2.png" alt="bpmn 2 screenshot"
+                class="w-full max-h-[200px] object-cover rounded-[5px] mb-2">
+              <h4 class="text-lg md:text-xl font-bold mt-4 mb-2">Digital Optimization of the Offboarding Process
+                (Diploma Thesis)</h4>
+              <p class="text-base md:text-lg leading-relaxed">As part of my diploma thesis, I analyzed and digitally
+                optimized the employee offboarding process of a
+                company.
+                Using BPMN modeling, interviews, and process analysis, I designed a new, more efficient workflow.
+                Two technologies – RPA and WfMS – were evaluated for suitability.
+                The result: a Workflow Management System offers greater flexibility and long-term scalability for
+                complex
+                HR processes.
+                Implementation followed a structured waterfall model.</p>
+            </div>
+            <div class="bg-white p-3 shadow-md rounded-[10px] w-full mb-4">
+              <img src="./images/bfgs5.png" alt="School Website Screenshot"
+                class="w-full max-h-[200px] object-cover rounded-[5px] mb-2">
+              <h4 class="text-lg md:text-xl font-bold mt-4 mb-2">School Website (Live Project)</h4>
+              <p class="text-base md:text-lg leading-relaxed">I led the development of a new school website using
+                WordPress and a fresh theme.
+                I handled setup, subdomain configuration, and design implementation with custom CSS.
+                Throughout the project, I deepened my knowledge of WordPress architecture, explored and evaluated
+                different plugins,
+                and coordinated closely with the IT lead and school director.
+                All tasks were completed using internal resources.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Accordion: Private -->
+      <details
+        class="group w-full block border border-[#4e192c] rounded-[10px] bg-white dark:bg-[#251b1e] mb-[15px] overflow-hidden">
+        <summary
+          class="flex cursor-pointer items-center justify-between bg-[#4e192c] p-5 text-xl md:text-2xl font-bold text-white transition-colors hover:bg-[#631f38] list-none">
+          Personal Projects
+          <span class="text-2xl transition-transform duration-300 group-open:rotate-45">+</span>
+        </summary>
+        <div class="p-[18px] border-t border-black/10">
+          <div class="grid grid-cols-1 gap-6 min-[900px]:grid-cols-2 min-[1300px]:grid-cols-3">
+            <!-- Put your personal projects here -->
+            <div class="bg-white p-3 shadow-md rounded-[10px] w-full mb-4">
+              <img src="./images/Hyrox_Double.jpg" alt="Hyrox Double"
+                class="w-full max-h-[200px] object-cover rounded-[5px] mb-2">
+              <h4 class="text-lg md:text-xl font-bold mt-4 mb-2">Sport Ambition: HYROX</h4>
+              <p class="text-base md:text-lg leading-relaxed">On October 12, 2025, I completed my first HYROX Double
+                race in Geneva.
+                After just three months of training, my training partner and I spontaneously decided to sign up for a
+                HYROX Double race. We had no real idea how fast or strong we would be — until we crossed the finish line
+                and saw our time: 1 hour 32 minutes.
+                But more important than the time was what we discovered along the way: what we are capable of achieving
+                as
+                a team, and how much fun the challenge truly was.
+                We grew together and faced the challenge side by side.
+              </p>
+            </div>
+            <div class="bg-white p-3 shadow-md rounded-[10px] w-full mb-4">
+              <img src="./images/Hyrox_Solo.jpg" alt="Hyrox Solo"
+                class="w-full max-h-[200px] object-cover rounded-[5px] mb-2">
+              <h4 class="text-lg md:text-xl font-bold mt-4 mb-2">Sport Ambition: HYROX</h4>
+              <p class="text-base md:text-lg leading-relaxed">On January 18, 2026, I completed my first HYROX Solo race
+                in St. Gallen.
+                My goal time was 1 hour 30 minutes, but due to a foot injury, I finished in 1 hour 50 minutes.
+                Still, the experience reminded me that life isn’t a rigid plan — it’s something that constantly changes
+                as
+                circumstances evolve.
+                Now I have a time to work with.
+                The goal is progress.</p>
+            </div>
+            <div class="bg-white p-3 shadow-md rounded-[10px] w-full mb-4">
+              <img src="./images/Tauchen.JPG" alt="Tauchen"
+                class="w-full max-h-[200px] object-cover rounded-[5px] mb-2">
+              <h4 class="text-lg md:text-xl font-bold mt-4 mb-2">Passion: The Ocean</h4>
+              <p class="text-base md:text-lg leading-relaxed">Two years ago, I earned my Open Water Diver license — a
+                lifelong dream finally come true.
+                For me, diving is a beautiful balance between fear and freedom.
+              </p>
+            </div>
+            <div class="bg-white p-3 shadow-md rounded-[10px] w-full mb-4">
+              <h4 class="text-lg md:text-xl font-bold mt-4 mb-2">Sport Ambition: ATHX</h4>
+              <p class="text-base md:text-lg leading-relaxed">On April 25, 2026, I will compete in my first ATHX race in
+                Paris.
+                This event will be a new challenge for me — similar to HYROX, but with a stronger focus on strength,
+                endurance, and technique.
+                I’m curious to see how the race will feel and how far my progress will take me by that day.
+              </p>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section id="skills"
+    class="scroll-mt-20 bg-white dark:bg-[#251b1e] text-neutral-900 dark:text-white/90 pb-section-gap">
+    <div class="w-[90%] max-w-[1100px] mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold dark:text-white mb-6 tracking-tight">Skills</h2>
+      <p class="text-base md:text-xl leading-relaxed">
+        I learn fast, simplify complexity, and turn ideas into working systems — with steady progress over perfect
+        plans.
+      </p>
+
+      <h3 class="text-lg md:text-xl font-bold mt-4 mb-2 dark:text-white">Toolbox</h3>
+      <p class="text-base md:text-lg leading-relaxed">
+        Tools I use to turn ideas into working systems.
+      </p>
+
+      <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-xl border border-black/10 dark:border-white p-5">
+          <h4 class="text-sm font-semibold uppercase tracking-wide dark:text-white mb-3">Frontend</h4>
+          <ul class="flex flex-wrap gap-2 text-neutral-900">
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">HTML</li>
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">CSS</li>
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">JavaScript</li>
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">Responsive design</li>
+          </ul>
+        </div>
+
+        <div class="rounded-xl border border-black/10 dark:border-white p-5">
+          <h4 class="text-sm font-semibold uppercase tracking-wide dark:text-white mb-3">Styling & UI</h4>
+          <ul class="flex flex-wrap gap-2 text-neutral-900">
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">Tailwind CSS</li>
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">Clean typography</li>
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">Component-based layouts</li>
+          </ul>
+        </div>
+
+        <div class="rounded-xl border border-black/10 dark:border-white p-5">
+          <h4 class="text-sm font-semibold uppercase tracking-wide dark:text-white mb-3">CMS & Platforms</h4>
+          <ul class="flex flex-wrap gap-2 text-neutral-900">
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">WordPress (themes, custom
+              CSS)</li>
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">Firebase Hosting</li>
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">Cyon Hosting</li>
+          </ul>
+        </div>
+
+        <div class="rounded-xl border border-black/10 dark:border-white p-5">
+          <h4 class="text-sm font-semibold uppercase tracking-wide dark:text-white mb-3">Workflow</h4>
+          <ul class="flex flex-wrap gap-2 text-neutral-900">
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">Git / GitHub / GitLab</li>
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">Iterative shipping</li>
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">Debugging & refactoring</li>
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">Jira</li>
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">Trello</li>
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">Notion</li>
+            <li class="px-3 py-1 rounded-full border border-black/15 bg-[#fafafa] text-xs">Slack / Microsoft Teams</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+        <!-- CARD (reusable style) -->
+        <article
+          class="text-neutral-900 group rounded-2xl border border-black/10 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-lg font-semibold">Learning Mindset</h3>
+            <span class="text-xs font-medium rounded-full border border-black/15 px-2 py-1">
+              growth
+            </span>
+          </div>
+
+          <p class="mt-3 leading-relaxed">
+            I learn through openness, action, and practical application.
+          </p>
+
+          <ul class="mt-4 space-y-2 text-sm">
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Repetition and
+              hands-on practice</li>
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Feedback → refactor →
+              improve</li>
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Exchange when blocked,
+              breaks for clarity</li>
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Flexible in the path —
+              but consistent in the goal</li>
+          </ul>
+
+          <!-- mini “progress” visual (same in every card) -->
+          <div class="mt-5">
+            <div class="h-2 w-full rounded-full bg-black/10 overflow-hidden">
+              <div class="h-full w-2/3 rounded-full bg-[#4e192c] transition-all duration-300 group-hover:w-3/4"></div>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="text-neutral-900 group rounded-2xl border border-black/10 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-lg font-semibold">Systems Thinking</h3>
+            <span class="text-xs font-medium rounded-full border border-black/15 px-2 py-1">
+              structure
+            </span>
+          </div>
+
+          <p class="mt-3 leading-relaxed">
+            I look beyond individual tasks to understand processes, dependencies, and long-term maintainability.
+          </p>
+
+          <ul class="mt-4 space-y-2 text-sm">
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Map workflows,
+              friction points, and edge cases</li>
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Structure
+              responsibilities and enable clear handoffs</li>
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Think in flows and
+              systems — not isolated screens</li>
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Optimize for human
+              usability and sustainable maintenance</li>
+          </ul>
+
+          <div class="mt-5">
+            <div class="h-2 w-full rounded-full bg-black/10 overflow-hidden">
+              <div class="h-full w-2/3 rounded-full bg-[#4e192c] transition-all duration-300 group-hover:w-3/4"></div>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="text-neutral-900 group rounded-2xl border border-black/10 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-lg font-semibold">Problem Solving & Decision Making</h3>
+            <span class="text-xs font-medium rounded-full border border-black/15
+            px-2 py-1">
+              clarity
+            </span>
+          </div>
+
+          <p class="mt-3 leading-relaxed">
+            I turn ambiguity into clear, practical direction.
+          </p>
+
+          <ul class="mt-4 space-y-2 text-sm">
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Base decisions on
+              transparent data and facts.</li>
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Balance experience,
+              input, and intuition.</li>
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Choose sustainable,
+              adoptable solutions.</li>
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Reassess the situation
+              instead of labeling decisions as “wrong”</li>
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Take responsibility
+              and communicate reasoning transparently</li>
+          </ul>
+          <div class="mt-5">
+            <div class="h-2 w-full rounded-full bg-black/10 overflow-hidden">
+              <div class="h-full w-2/3 rounded-full bg-[#4e192c] transition-all duration-300 group-hover:w-3/4"></div>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="text-neutral-900 group rounded-2xl border border-black/10 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-lg font-semibold">Building & Shipping</h3>
+            <span class="text-xs font-medium rounded-full border border-black/15 px-2 py-1">
+              delivery
+            </span>
+          </div>
+
+          <p class="mt-3 leading-relaxed">
+            I focus on continuous progress.
+          </p>
+
+          <ul class="mt-4 space-y-2 text-sm">
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Engage stakeholders
+              and understand requirements</li>
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Clarify technical,
+              financial, and resource constraints</li>
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Track measurable
+              progress and feedback</li>
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Ensure clarity for the
+              majority of stakeholders</li>
+            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-black/40"></span>Adjust priorities when
+              needed</li>
+          </ul>
+
+          <div class="mt-5">
+            <div class="h-2 w-full rounded-full bg-black/10 overflow-hidden">
+              <div class="h-full w-2/3 rounded-full bg-[#4e192c] transition-all duration-300 group-hover:w-3/4"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-neutral-900 text-white py-section-gap px-6">
+    <div class="max-w-[1100px] mx-auto text-center">
+      <div
+        class="p-[28px_18px] sm:p-[60px_30px] bg-white/5 border border-white/10 rounded-[10px] shadow-[0_16px_40px_rgba(0,0,0,0.35)] backdrop-blur-md">
+        <p class="m-0 mb-2.5 text-[13px] tracking-[0.08em] uppercase text-white/90">Based in Switzerland</p>
+        <h2 class="text-[28px] sm:text-[clamp(28px,5vw,42px)] font-bold text-white mb-5">Let’s build something clean &
+          useful.</h2>
+
+        <div class="flex flex-wrap gap-3 justify-center mt-2">
+          <span id="email-wrapper"></span>
+
+          <script>
+            (function () {
+              // Wir teilen die Mail auf, damit Bots sie nicht am Stück finden
+              const user = "m.kaptancik";
+              const domain = "hotmail.com";
+
+              const wrapper = document.getElementById('email-wrapper');
+              // Hier bauen wir genau dein Design mit deinen Tailwind-Klassen nach
+              wrapper.innerHTML = `
+            <a href="mailto:${user}@${domain}" 
+            class="inline-flex items-center justify-center gap-2.5 px-4 py-3 rounded-full font-semibold bg-white text-black border border-white/20 transition-all duration-200 hover:bg-[#4e192c] hover:text-white hover:border-[#4e192c] hover:-translate-y-0.5">
+            Email me
+            </a>
+          `;
+            })();
+          </script>
+
+          <a href="https://www.linkedin.com/in/miray-kaptancik-84a5901a9" target="_blank" rel="noopener"
+            class="inline-flex items-center justify-center gap-2.5 px-4 py-3 rounded-full font-semibold bg-transparent text-white border border-white/30 transition-all duration-200 hover:-translate-y-0.5">
+            <!-- LinkedIn icon -->
+            <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor"
+                d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0.5 8h4V23h-4V8zM8 8h3.8v2.1h.1c.5-1 1.9-2.1 3.9-2.1 4.2 0 5 2.8 5 6.4V23h-4v-6.9c0-1.6 0-3.7-2.2-3.7-2.2 0-2.6 1.7-2.6 3.6V23H8V8z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <p class="mt-10 text-sm text-center opacity-60">
+        © 2026 Miray Kaptancik. All rights reserved.
+        <a href="./impressum.html" class="hover:underline">Impressum</a>
+        <a href="./datenschutz.html" class="hover:underline">Datenschutz</a>
+      </p>
+    </div>
+  </section>
+
+  <script>
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuLinks = mobileMenu.querySelectorAll('a');
+
+    // Toggle Menü
+    burgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('flex');
+    });
+
+    // Menü schließen, wenn ein Link geklickt wird
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
+      });
+    });
+  </script>
+</body>
+
+</html>
